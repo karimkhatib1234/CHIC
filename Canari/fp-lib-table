@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Canari)(type KiCad)(uri ${KIPRJMOD}/Canari.pretty)(options "")(descr ""))
+)

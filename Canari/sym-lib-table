@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Canari)(type Legacy)(uri ${KIPRJMOD}/Canari.lib)(options "")(descr ""))
+  (lib (name dk_Embedded-Microcontrollers)(type Legacy)(uri /Users/mbpr/Documents/Personal/EPFL/Master/Minor/Prototyping/Libraries/digikey-kicad-library-master/digikey-symbols/dk_Embedded-Microcontrollers.lib)(options "")(descr ""))
+  (lib (name dk_Microphones)(type Legacy)(uri /Users/mbpr/Documents/Personal/EPFL/Master/Minor/Prototyping/Libraries/digikey-kicad-library-master/digikey-symbols/dk_Microphones.lib)(options "")(descr ""))
+)

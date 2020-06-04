@@ -1,0 +1,795 @@
+EESchema Schematic File Version 4
+LIBS:Canari-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Canari:SO8 GN1
+U 1 1 5ED13F24
+P 1250 4550
+F 0 "GN1" H 1000 5050 50  0000 C CNN
+F 1 "SO8" H 1250 4550 50  0000 C CNN
+F 2 "Canari:SOT176-1" H 1000 5050 50  0001 C CNN
+F 3 "" H 1000 5050 50  0001 C CNN
+	1    1250 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6050 2250 4250
+Wire Wire Line
+	2200 6000 2200 4650
+$Comp
+L power:GND #PWR01
+U 1 1 5ED545FA
+P 2350 6200
+F 0 "#PWR01" H 2350 5950 50  0001 C CNN
+F 1 "GND" H 2355 6027 50  0000 C CNN
+F 2 "" H 2350 6200 50  0001 C CNN
+F 3 "" H 2350 6200 50  0001 C CNN
+	1    2350 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3500 2450 4600
+Wire Wire Line
+	1250 5100 1250 6200
+Connection ~ 2350 6200
+Wire Wire Line
+	2350 6200 2450 6200
+Wire Wire Line
+	1650 4450 1700 4450
+$Comp
+L Device:L L1
+U 1 1 5ED6771C
+P 600 4550
+F 0 "L1" H 652 4596 50  0000 L CNN
+F 1 "L" H 652 4505 50  0000 L CNN
+F 2 "Canari:Coil" H 600 4550 50  0001 C CNN
+F 3 "~" H 600 4550 50  0001 C CNN
+	1    600  4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  4400 600  4250
+Wire Wire Line
+	600  4250 850  4250
+Wire Wire Line
+	850  4250 850  4450
+Wire Wire Line
+	850  4650 850  4850
+Wire Wire Line
+	850  4850 600  4850
+Wire Wire Line
+	600  4850 600  4700
+$Comp
+L Battery_Management:MCP73831-2-OT U1
+U 1 1 5EDCFF41
+P 2450 3200
+F 0 "U1" H 2250 3350 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 2800 3450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2500 2950 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2300 3150 50  0001 C CNN
+	1    2450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4650 2200 4650
+Wire Wire Line
+	1650 4250 2250 4250
+Wire Wire Line
+	2450 2750 2450 2900
+$Comp
+L Device:C_Small C1
+U 1 1 5EE19E2E
+P 1750 3100
+F 0 "C1" H 1842 3146 50  0000 L CNN
+F 1 "4.7µF" H 1842 3055 50  0000 L CNN
+F 2 "kicad-footprints-master:C_0402_1005Metric" H 1750 3100 50  0001 C CNN
+F 3 "~" H 1750 3100 50  0001 C CNN
+	1    1750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5EE29992
+P 1950 3650
+F 0 "R1" H 2009 3696 50  0000 L CNN
+F 1 "10kΩ" H 2009 3605 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 1950 3650 50  0001 C CNN
+F 3 "~" H 1950 3650 50  0001 C CNN
+	1    1950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3300 2050 3300
+Wire Wire Line
+	1950 3750 1950 3800
+Connection ~ 1950 6200
+Wire Wire Line
+	1950 6200 2350 6200
+Wire Wire Line
+	1250 6200 1950 6200
+Wire Wire Line
+	1950 3300 1950 3550
+Wire Wire Line
+	1750 3000 1750 2750
+Wire Wire Line
+	1750 3200 1750 3800
+Connection ~ 1950 3800
+Wire Wire Line
+	1950 3800 1950 6200
+Wire Wire Line
+	1250 2750 1250 3900
+Wire Wire Line
+	1250 2750 1750 2750
+Wire Wire Line
+	1700 4450 1700 3900
+Wire Wire Line
+	1700 3900 1250 3900
+Connection ~ 1250 3900
+Wire Wire Line
+	1250 3900 1250 4000
+Connection ~ 1750 2750
+Wire Wire Line
+	1750 2750 2450 2750
+Wire Wire Line
+	1750 3800 1950 3800
+Connection ~ 2450 6200
+Wire Wire Line
+	2850 3100 2950 3100
+Wire Wire Line
+	7650 5000 7650 5250
+Wire Wire Line
+	7650 4650 7650 4800
+$Comp
+L Device:R_Small R6
+U 1 1 5ED73D70
+P 7650 5350
+F 0 "R6" H 7709 5396 50  0000 L CNN
+F 1 "10Ω" H 7709 5305 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0402_1005Metric" H 7650 5350 50  0001 C CNN
+F 3 "~" H 7650 5350 50  0001 C CNN
+	1    7650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5ED7308D
+P 7650 4900
+F 0 "C8" H 7742 4946 50  0000 L CNN
+F 1 "100nF" H 7742 4855 50  0000 L CNN
+F 2 "kicad-footprints-master:C_0402_1005Metric" H 7650 4900 50  0001 C CNN
+F 3 "~" H 7650 4900 50  0001 C CNN
+	1    7650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4650 7650 4650
+Connection ~ 7200 5450
+Wire Wire Line
+	7300 5450 7200 5450
+Wire Wire Line
+	7300 5250 7300 5450
+Wire Wire Line
+	7300 5050 7300 4950
+$Comp
+L Device:C_Small C7
+U 1 1 5ED711DD
+P 7300 5150
+F 0 "C7" H 7392 5196 50  0000 L CNN
+F 1 "100nF" H 7392 5105 50  0000 L CNN
+F 2 "kicad-footprints-master:C_0402_1005Metric" H 7300 5150 50  0001 C CNN
+F 3 "~" H 7300 5150 50  0001 C CNN
+	1    7300 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4950 7200 5450
+Wire Wire Line
+	6550 4550 6550 4950
+Connection ~ 6550 4550
+Wire Wire Line
+	6700 4550 6550 4550
+Wire Wire Line
+	6900 4550 7000 4550
+$Comp
+L Device:CP_Small C6
+U 1 1 5ED66B4A
+P 6800 4550
+F 0 "C6" V 7025 4550 50  0000 C CNN
+F 1 "10µF" V 6934 4550 50  0000 C CNN
+F 2 "kicad-footprints-master:C_0805_2012Metric" H 6800 4550 50  0001 C CNN
+F 3 "~" H 6800 4550 50  0001 C CNN
+	1    6800 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 4150 6550 4550
+Wire Wire Line
+	6550 3950 6550 3700
+Wire Wire Line
+	7200 4350 7200 3700
+Wire Wire Line
+	6550 3700 7200 3700
+$Comp
+L Device:R_Small R5
+U 1 1 5ED67E0D
+P 6550 4050
+F 0 "R5" H 6609 4096 50  0000 L CNN
+F 1 "1kΩ" H 6609 4005 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 6550 4050 50  0001 C CNN
+F 3 "~" H 6550 4050 50  0001 C CNN
+	1    6550 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4750 6950 4750
+$Comp
+L Device:Microphone_Condenser MK1
+U 1 1 5ED0F137
+P 6550 5150
+F 0 "MK1" H 6680 5196 50  0000 L CNN
+F 1 "Microphone_Condenser" H 5550 5150 50  0000 L CNN
+F 2 "Canari:MIC_CMA-4544PF-W" V 6550 5250 50  0001 C CNN
+F 3 "~" V 6550 5250 50  0001 C CNN
+	1    6550 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5EECF687
+P 2950 3600
+F 0 "C2" H 3042 3646 50  0000 L CNN
+F 1 "4.7µF" H 3042 3555 50  0000 L CNN
+F 2 "kicad-footprints-master:C_0402_1005Metric" H 2950 3600 50  0001 C CNN
+F 3 "~" H 2950 3600 50  0001 C CNN
+	1    2950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3500 2950 3100
+Connection ~ 2950 3100
+Wire Wire Line
+	2950 3100 3300 3100
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5EEDB31D
+P 3300 4100
+F 0 "BT1" H 3418 4196 50  0000 L CNN
+F 1 "Battery_Cell" H 3418 4105 50  0000 L CNN
+F 2 "kicad-footprints-master:C_1812_4532Metric" V 3300 4160 50  0001 C CNN
+F 3 "~" V 3300 4160 50  0001 C CNN
+	1    3300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3900 3300 3100
+Wire Wire Line
+	2950 3700 2950 4600
+Wire Wire Line
+	2950 4600 2450 4600
+Connection ~ 2450 4600
+Wire Wire Line
+	2450 4600 2450 6200
+Wire Wire Line
+	3300 4200 3300 4600
+Wire Wire Line
+	3300 4600 2950 4600
+Connection ~ 2950 4600
+Wire Wire Line
+	2200 6000 10550 6000
+Wire Wire Line
+	2250 6050 10900 6050
+Connection ~ 6100 3700
+Wire Wire Line
+	6100 3700 6100 3900
+Connection ~ 5700 3700
+Wire Wire Line
+	5700 3700 6100 3700
+Connection ~ 5800 4500
+Wire Wire Line
+	6100 4500 6100 4100
+Wire Wire Line
+	5800 4500 6100 4500
+$Comp
+L Device:C_Small C5
+U 1 1 5EDAC242
+P 6100 4000
+F 0 "C5" H 6192 4046 50  0000 L CNN
+F 1 "22µF" H 6192 3955 50  0000 L CNN
+F 2 "kicad-footprints-master:C_0805_2012Metric" H 6100 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 4500
+Wire Wire Line
+	3950 4500 4300 4500
+Wire Wire Line
+	3950 3600 3950 4500
+Connection ~ 5050 4500
+Wire Wire Line
+	4300 4500 5050 4500
+Wire Wire Line
+	4300 4200 4300 4500
+Connection ~ 3950 3100
+Wire Wire Line
+	3950 3100 4300 3100
+Connection ~ 4300 3100
+Wire Wire Line
+	3950 3400 3950 3100
+$Comp
+L Device:C_Small C3
+U 1 1 5ED970D1
+P 3950 3500
+F 0 "C3" H 4042 3546 50  0000 L CNN
+F 1 "2.2µF" H 4042 3455 50  0000 L CNN
+F 2 "kicad-footprints-master:C_0603_1608Metric" H 3950 3500 50  0001 C CNN
+F 3 "~" H 3950 3500 50  0001 C CNN
+	1    3950 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 3100
+Wire Wire Line
+	4300 3100 4600 3100
+Wire Wire Line
+	4300 3550 4300 3100
+Wire Wire Line
+	5300 3100 5700 3100
+Wire Wire Line
+	4600 3100 5000 3100
+Wire Wire Line
+	5700 3600 5550 3600
+Wire Wire Line
+	5700 3100 5700 3600
+Wire Wire Line
+	4600 3100 4600 3600
+$Comp
+L Device:L L2
+U 1 1 5ED8669E
+P 5150 3100
+F 0 "L2" V 5340 3100 50  0000 C CNN
+F 1 "2.2µH" V 5249 3100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 5150 3100 50  0001 C CNN
+F 3 "~" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5250 4500
+Wire Wire Line
+	5800 4500 5250 4500
+Wire Wire Line
+	5800 4350 5800 4500
+$Comp
+L Device:C_Small C4
+U 1 1 5ED8401D
+P 5800 4250
+F 0 "C4" H 5892 4296 50  0000 L CNN
+F 1 "1µF" H 5892 4205 50  0000 L CNN
+F 2 "kicad-footprints-master:C_0603_1608Metric" H 5800 4250 50  0001 C CNN
+F 3 "~" H 5800 4250 50  0001 C CNN
+	1    5800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3800 5800 4150
+Wire Wire Line
+	5550 3800 5800 3800
+Wire Wire Line
+	5700 4000 5550 4000
+Wire Wire Line
+	5700 3700 5700 4000
+Wire Wire Line
+	5550 3700 5700 3700
+Connection ~ 4300 3900
+Wire Wire Line
+	4300 3900 4300 3750
+Wire Wire Line
+	4300 3900 4300 4000
+Wire Wire Line
+	4750 3900 4300 3900
+$Comp
+L Device:R_Small R4
+U 1 1 5ED75257
+P 4300 4100
+F 0 "R4" H 4359 4146 50  0000 L CNN
+F 1 "180kΩ" H 4359 4055 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 4300 4100 50  0001 C CNN
+F 3 "~" H 4300 4100 50  0001 C CNN
+	1    4300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5ED74E4E
+P 4300 3650
+F 0 "R3" H 4359 3696 50  0000 L CNN
+F 1 "2MΩ" H 4359 3605 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0402_1005Metric" H 4300 3650 50  0001 C CNN
+F 3 "~" H 4300 3650 50  0001 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 3700
+Wire Wire Line
+	4600 3800 4600 3700
+Wire Wire Line
+	4750 3800 4600 3800
+Connection ~ 4600 3600
+Wire Wire Line
+	4600 3700 4600 3600
+Wire Wire Line
+	4750 3700 4600 3700
+Wire Wire Line
+	4750 3600 4600 3600
+Wire Wire Line
+	5150 4500 5250 4500
+Connection ~ 5150 4500
+Wire Wire Line
+	5150 4300 5150 4500
+Wire Wire Line
+	5250 4500 5250 4300
+Wire Wire Line
+	5050 4500 5150 4500
+Wire Wire Line
+	5050 4300 5050 4500
+$Comp
+L Regulator_Switching:TPS61200DRC U2
+U 1 1 5ED6BC0F
+P 5150 3800
+F 0 "U2" H 5150 4267 50  0000 C CNN
+F 1 "TPS61200DRC" H 5150 4176 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 5150 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps61200.pdf" H 5150 3800 50  0001 C CNN
+	1    5150 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6200 5150 6200
+Wire Wire Line
+	6550 5350 6550 6200
+Connection ~ 6550 6200
+Wire Wire Line
+	6550 6200 6950 6200
+Wire Wire Line
+	6950 4750 6950 6200
+Connection ~ 6950 6200
+Wire Wire Line
+	6950 6200 7200 6200
+Connection ~ 7200 6200
+$Comp
+L Device:Q_PMOS_DSG Q1
+U 1 1 5EEFA6B5
+P 3600 3000
+F 0 "Q1" H 3806 3046 50  0000 L CNN
+F 1 "Q_PMOS_DSG" H 3806 2955 50  0000 L CNN
+F 2 "kicad-footprints-master:SC-59" H 3800 3100 50  0001 C CNN
+F 3 "~" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3100 3400 3100
+Connection ~ 3300 3100
+Wire Wire Line
+	1250 2750 1250 1950
+Wire Wire Line
+	1250 1950 2850 1950
+Wire Wire Line
+	2850 1950 2850 2100
+Connection ~ 1250 2750
+$Comp
+L Device:R_Small R2
+U 1 1 5F009B8B
+P 2850 2200
+F 0 "R2" H 2909 2246 50  0000 L CNN
+F 1 "10kΩ" H 2909 2155 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 2850 2200 50  0001 C CNN
+F 3 "~" H 2850 2200 50  0001 C CNN
+	1    2850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F00A3AA
+P 2850 2500
+F 0 "#PWR02" H 2850 2250 50  0001 C CNN
+F 1 "GND" H 2855 2327 50  0000 C CNN
+F 2 "" H 2850 2500 50  0001 C CNN
+F 3 "" H 2850 2500 50  0001 C CNN
+	1    2850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2300 2850 2500
+Wire Wire Line
+	2850 1950 3600 1950
+Wire Wire Line
+	3600 1950 3600 2800
+Connection ~ 2850 1950
+Wire Wire Line
+	3800 3100 3950 3100
+Wire Wire Line
+	7200 5450 7200 5600
+Wire Wire Line
+	6100 3700 6550 3700
+Connection ~ 6550 3700
+$Comp
+L Device:D_Schottky D1
+U 1 1 5F0C9566
+P 5100 1950
+F 0 "D1" H 5100 1734 50  0000 C CNN
+F 1 "D_Schottky" H 5100 1825 50  0000 C CNN
+F 2 "Canari:STPS5L60S" H 5100 1950 50  0001 C CNN
+F 3 "~" H 5100 1950 50  0001 C CNN
+	1    5100 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 1950 4950 1950
+Connection ~ 3600 1950
+Wire Wire Line
+	5250 1950 6100 1950
+Wire Wire Line
+	6100 1950 6100 3700
+Wire Wire Line
+	5150 4500 5150 6200
+Connection ~ 5150 6200
+Wire Wire Line
+	5150 6200 6550 6200
+$Comp
+L Device:LED D3
+U 1 1 5F123B50
+P 8250 5000
+F 0 "D3" V 8197 5078 50  0000 L CNN
+F 1 "LED" V 8288 5078 50  0000 L CNN
+F 2 "digikey-kicad-library-master:LED_3mm_Radial" H 8250 5000 50  0001 C CNN
+F 3 "~" H 8250 5000 50  0001 C CNN
+	1    8250 5000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7200 3700
+Wire Wire Line
+	7200 3700 9550 3700
+$Comp
+L Amplifier_Audio:LM386 U3
+U 1 1 5ED56BCD
+P 7300 4650
+F 0 "U3" H 7644 4696 50  0000 L CNN
+F 1 "LM386" H 7350 4800 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7400 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 7500 4850 50  0001 C CNN
+	1    7300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3700 9550 3950
+Wire Wire Line
+	10300 5450 10900 5450
+$Comp
+L Device:R_Small R12
+U 1 1 5ED5A0AC
+P 10900 5100
+F 0 "R12" H 10959 5146 50  0000 L CNN
+F 1 "5.1kΩ" H 10959 5055 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0402_1005Metric" H 10900 5100 50  0001 C CNN
+F 3 "~" H 10900 5100 50  0001 C CNN
+	1    10900 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5850 9600 6200
+$Comp
+L Canari:STM32L010K8_R8 U4
+U 1 1 5ED44946
+P 9650 4900
+F 0 "U4" H 9650 3861 50  0000 C CNN
+F 1 "STM32L010K8_R8" H 9650 4900 50  0000 C CNN
+F 2 "digikey-kicad-library-master:LQFP-32_7x7mm" H 9500 4850 50  0001 C CNN
+F 3 "" H 9500 4850 50  0001 C CNN
+	1    9650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5F14C178
+P 8250 5300
+F 0 "R8" H 8309 5346 50  0000 L CNN
+F 1 "1kΩ" H 8309 5255 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 8250 5300 50  0001 C CNN
+F 3 "~" H 8250 5300 50  0001 C CNN
+	1    8250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5400 8250 6200
+Connection ~ 8250 6200
+Wire Wire Line
+	8250 6200 8550 6200
+Wire Wire Line
+	8250 5150 8250 5200
+NoConn ~ 9000 4350
+NoConn ~ 9000 4450
+NoConn ~ 9000 4550
+NoConn ~ 9000 5050
+NoConn ~ 9000 5150
+NoConn ~ 9000 5350
+NoConn ~ 9000 5450
+NoConn ~ 9000 5550
+NoConn ~ 10300 5350
+NoConn ~ 10300 5250
+NoConn ~ 10300 5150
+NoConn ~ 10300 5050
+NoConn ~ 10300 4950
+NoConn ~ 10300 4850
+NoConn ~ 10300 4750
+NoConn ~ 10300 4650
+NoConn ~ 10300 4550
+NoConn ~ 10300 4450
+NoConn ~ 10300 4350
+NoConn ~ 9750 3950
+NoConn ~ 9650 3950
+NoConn ~ 9700 5850
+NoConn ~ 10300 5650
+NoConn ~ 7300 4350
+NoConn ~ 7400 4950
+NoConn ~ 2850 3300
+NoConn ~ 1650 4850
+Wire Wire Line
+	7650 5450 7650 5600
+Wire Wire Line
+	7650 5600 7200 5600
+Connection ~ 7200 5600
+Wire Wire Line
+	7200 5600 7200 6200
+Wire Wire Line
+	7650 4650 9000 4650
+Connection ~ 7650 4650
+$Comp
+L Device:LED D2
+U 1 1 5EDE4D6E
+P 8000 5550
+F 0 "D2" V 7947 5628 50  0000 L CNN
+F 1 "LED" V 8038 5628 50  0000 L CNN
+F 2 "digikey-kicad-library-master:LED_3mm_Radial" H 8000 5550 50  0001 C CNN
+F 3 "~" H 8000 5550 50  0001 C CNN
+	1    8000 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5EDE4D79
+P 8000 5850
+F 0 "R7" H 8059 5896 50  0000 L CNN
+F 1 "1kΩ" H 8059 5805 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 8000 5850 50  0001 C CNN
+F 3 "~" H 8000 5850 50  0001 C CNN
+	1    8000 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5700 8000 5750
+Wire Wire Line
+	8000 4750 8000 5400
+$Comp
+L Device:LED D4
+U 1 1 5EE3DF23
+P 8550 5550
+F 0 "D4" V 8497 5628 50  0000 L CNN
+F 1 "LED" V 8588 5628 50  0000 L CNN
+F 2 "digikey-kicad-library-master:LED_3mm_Radial" H 8550 5550 50  0001 C CNN
+F 3 "~" H 8550 5550 50  0001 C CNN
+	1    8550 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5EE3DF2E
+P 8550 5850
+F 0 "R9" H 8609 5896 50  0000 L CNN
+F 1 "1kΩ" H 8609 5805 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 8550 5850 50  0001 C CNN
+F 3 "~" H 8550 5850 50  0001 C CNN
+	1    8550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5950 8550 6200
+Wire Wire Line
+	8550 5700 8550 5750
+Connection ~ 8550 6200
+Wire Wire Line
+	8550 6200 8850 6200
+Wire Wire Line
+	8250 4850 9000 4850
+Wire Wire Line
+	8550 5400 8550 4950
+Wire Wire Line
+	8550 4950 9000 4950
+$Comp
+L Device:LED D5
+U 1 1 5EE6197B
+P 8850 5450
+F 0 "D5" V 8797 5528 50  0000 L CNN
+F 1 "LED" V 8888 5528 50  0000 L CNN
+F 2 "digikey-kicad-library-master:LED_3mm_Radial" H 8850 5450 50  0001 C CNN
+F 3 "~" H 8850 5450 50  0001 C CNN
+	1    8850 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 5EE61985
+P 8850 5750
+F 0 "R10" H 8909 5796 50  0000 L CNN
+F 1 "1kΩ" H 8909 5705 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0603_1608Metric" H 8850 5750 50  0001 C CNN
+F 3 "~" H 8850 5750 50  0001 C CNN
+	1    8850 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5600 8850 5650
+Wire Wire Line
+	8000 4750 9000 4750
+Wire Wire Line
+	8000 6200 8250 6200
+Wire Wire Line
+	8000 5950 8000 6200
+Wire Wire Line
+	7200 6200 8000 6200
+Connection ~ 8000 6200
+Wire Wire Line
+	8850 5300 8850 5250
+Wire Wire Line
+	8850 5250 9000 5250
+Wire Wire Line
+	8850 5850 8850 6200
+Connection ~ 8850 6200
+Wire Wire Line
+	8850 6200 9600 6200
+Wire Wire Line
+	10550 5550 10550 6000
+Wire Wire Line
+	10900 6050 10900 5450
+Wire Wire Line
+	10900 5200 10900 5450
+Connection ~ 10900 5450
+Wire Wire Line
+	10900 3700 10900 5000
+Connection ~ 9550 3700
+Wire Wire Line
+	10550 3700 9550 3700
+Connection ~ 10550 3700
+Wire Wire Line
+	10550 3700 10550 4500
+Wire Wire Line
+	10900 3700 10550 3700
+$Comp
+L Device:R_Small R11
+U 1 1 5ED59345
+P 10550 4600
+F 0 "R11" H 10609 4646 50  0000 L CNN
+F 1 "5.1kΩ" H 10609 4555 50  0000 L CNN
+F 2 "kicad-footprints-master:R_0402_1005Metric" H 10550 4600 50  0001 C CNN
+F 3 "~" H 10550 4600 50  0001 C CNN
+	1    10550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 4700 10550 5550
+Connection ~ 10550 5550
+Wire Wire Line
+	10300 5550 10550 5550
+$EndSCHEMATC

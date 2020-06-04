@@ -1,0 +1,26 @@
+Source:	/Users/mbpr/Documents/Personal/EPFL/Master/Minor/Prototyping/Canari/Canari.sch
+Date:	2020 June 02, Tuesday 12:22:33
+Tool:	Eeschema (5.1.2-1)-1
+Component Count:	21
+Ref	Value	Part	Footprint	Description	Vendor
+C1	0.15µF	Device:C_Small		Unpolarized capacitor, small symbol	
+C2	10µF	Device:CP_Small		Polarized capacitor, small symbol	
+C3	100nF	Device:C_Small		Unpolarized capacitor, small symbol	
+C4	100nF	Device:C_Small		Unpolarized capacitor, small symbol	
+C5	1µF	Device:C_Small		Unpolarized capacitor, small symbol	
+C6	2.2µF	Device:C_Small		Unpolarized capacitor, small symbol	
+C7	22µF	Device:C_Small		Unpolarized capacitor, small symbol	
+GN1	SO8	Canari:SO8			
+L1	L	Device:L		Inductor	
+L2	2.2µH	Device:L		Inductor	
+MK1	Microphone_Condenser	Device:Microphone_Condenser		Condenser microphone	
+R1	1kΩ	Device:R_Small		Resistor, small symbol	
+R2	10Ω	Device:R_Small		Resistor, small symbol	
+R3	5.1kΩ	Device:R_Small		Resistor, small symbol	
+R4	5.1kΩ	Device:R_Small		Resistor, small symbol	
+R5	2MΩ	Device:R_Small		Resistor, small symbol	
+R6	180kΩ	Device:R_Small		Resistor, small symbol	
+U1	MCP73831-2-OT	Battery_Management:MCP73831-2-OT	Package_TO_SOT_SMD:SOT-23-5	Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package	
+U2	LM386	Amplifier_Audio:LM386		Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8	
+U3	STM32L010K8_R8	Canari:STM32L010K8_R8			
+U4	TPS61200DRC	Regulator_Switching:TPS61200DRC	Package_SON:Texas_S-PVSON-N10_ThermalVias	Low Input Voltage Synchronous Boost Converter With 1.3A Switches, Adjustable Output Voltage, 0.3-5.5V Input Voltage, VSON-10	
